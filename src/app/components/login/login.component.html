@@ -1,0 +1,26 @@
+<mat-card class="login-card-container" fxFlex>
+  
+  <h2 class="login-header">Sign in</h2>
+  
+  <div class="login-form-container" fxFlex>
+     <form #form="ngForm" (ngSubmit)="logForm(form.value)" ngNativeValidate fxFlex>
+      
+        <mat-form-field color="primary" fxFlex>
+            <input fxFlex matInput placeholder="Enter your email id" [type]="'text'" required name="email" ngModel>
+        </mat-form-field>
+
+       <mat-form-field color="primary" fxFlex>
+        <input matInput #password placeholder="Enter your password" [type]="'password'" required name="password" ngModel>
+       </mat-form-field>
+       
+       <br/>
+       <mat-toolbar style="background-color: white" fxFlex>
+         <mat-toolbar-row>
+         <button mat-raised-button  style=" top:10px" color="primary"  type="submit">Sign in</button>
+         <button mat-raised-button  style="top:10px ; left:30px"  color="primary" (click)="navigate()">Register</button>
+        </mat-toolbar-row>
+      </mat-toolbar>
+     </form>
+    </div>
+</mat-card>
+

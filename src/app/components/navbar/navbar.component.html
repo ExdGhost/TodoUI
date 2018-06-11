@@ -1,0 +1,17 @@
+<div class="menu-container" >
+    <mat-menu #rootMenu="matMenu" class="menu-nav"> 
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+   
+    <mat-toolbar color="accent"  class ="menu-toolbar">
+        <mat-toolbar-row >
+           <h1 class = "app-name">Todo App</h1>
+            <span class="fill-space"></span>
+            <span style="padding-right: 50px;">
+              <button mat-raised-button color="primary" style="font-size: 16px; color: white" [matMenuTriggerFor]="rootMenu" *ngIf="message==true">Account</button>
+           </span>
+    </mat-toolbar-row>
+
+   </mat-toolbar>
+   </div>

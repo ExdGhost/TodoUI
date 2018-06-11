@@ -1,0 +1,34 @@
+.login-card-container {
+    top: 25%;
+    left: 40%;
+    width: 15%;
+    position: absolute;
+   z-index: 1;
+}
+
+.login-form-container {
+    width:auto;
+    height: auto;
+  }
+  
+  .login-form-container > * {
+    width: 100%;
+  }
+  
+  .login-form-right-align {
+    text-align: right;
+  }
+  
+  input.login-form-right-align::-webkit-outer-spin-button,
+  input.login-form-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  h2.login-header {
+    top:0;
+    width: 100%;
+  }
+
+  input.login-form-right-align {
+    -moz-appearance: textfield;
+  }

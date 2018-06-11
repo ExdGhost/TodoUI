@@ -1,0 +1,38 @@
+<mat-card class="register-card-container">
+  
+    <h2 class="register-header">Register</h2>
+    
+    <div class="register-form-container">
+       <form #form="ngForm" (ngSubmit)="regForm(form.value)" ngNativeValidate fxFlex>
+        
+         <mat-form-field color="primary">
+            <input matInput placeholder="Enter your first name" [type]="'text'"  required name="fname" ngModel>
+         </mat-form-field>
+
+         <mat-form-field color="primary">
+            <input matInput placeholder="Enter your last name" [type]="'text'"  required name="lname" ngModel>
+         </mat-form-field>
+          
+         <mat-form-field color="primary">
+            <input matInput placeholder="Enter your email id" [type]="'text'" required name="email" ngModel>
+          </mat-form-field>
+
+         <mat-form-field color="primary">
+          <input matInput #password placeholder="Enter your password" [type]="'password'" required name="password" ngModel>
+         </mat-form-field>
+
+         <mat-form-field color="primary">
+            <input matInput #password placeholder="Confirm your password" [type]="'password'" required name="cnfpassw" ngModel>
+         </mat-form-field>
+         
+         <br/>
+         <mat-toolbar style="background-color: white">
+           <mat-toolbar-row>
+           <button mat-raised-button  style=" top:10px; left:50px" color="primary" type="submit">Submit</button>
+          </mat-toolbar-row>
+        </mat-toolbar>
+       </form>
+      </div>
+  </mat-card>
+  
+  
